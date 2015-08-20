@@ -1,8 +1,8 @@
 FROM webhippie/minecraft-vanilla:1.8
-MAINTAINER Thomas Boerger <thomas@webhippie.de>
+MAINTAINER kahatie
 
-ENV MINECRAFT_VERSION 1.8
-ENV FORGE_VERSION 11.14.3.1450
+ENV MINECRAFT_VERSION 1.7.10
+ENV FORGE_VERSION 10.13.4.1448
 ENV FORGE_URL http://files.minecraftforge.net/maven/net/minecraftforge/forge/${MINECRAFT_VERSION}-${FORGE_VERSION}/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-installer.jar
 ENV FORGE_JAR forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-universal.jar
 
@@ -11,7 +11,7 @@ ENV SERVER_MINHEAP 512M
 ENV SERVER_MAXPERM 128M
 ENV SERVER_OPTS nogui
 ENV SERVER_MOTD Minecraft
-ENV SERVER_RCONPWD webhippie
+ENV SERVER_RCONPWD kahatie
 ENV SERVER_DYNMAP true
 ENV JAVA_OPTS -server -XX:+UseConcMarkSweepGC
 
